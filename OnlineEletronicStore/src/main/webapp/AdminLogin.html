@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: url('images/online.png') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 350px; /* Reduced width */
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.85); /* Black inside */
+        box-shadow: 0px 0px 20px rgba(255, 179, 0, 0.4);
+        text-align: center;
+        animation: fadeIn 0.7s ease-in-out;
+    }
+
+    h1 {
+        color: #ffb300;
+        margin-bottom: 20px;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        color: #ffb300; /* Gold text for labels */
+        margin-bottom: 5px;
+        margin-top: 12px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ffb300;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        background-color: #fff; /* White input box */
+        color: #000; /* Black text */
+        transition: 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        box-shadow: 0 0 8px #ffb300;
+        border-color: #ffb300;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        background: linear-gradient(90deg, #ffb300, #e69a00);
+        color: black;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background: linear-gradient(90deg, #e69a00, #ffb300);
+        transform: scale(1.03);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+<form action="alog" method="post">
+    <h1>Admin Login</h1>
+    <label>UserName:</label>
+    <input type="text" name="uname" placeholder="Enter username">
+    
+    <label>Password:</label>
+    <input type="password" name="pswd" placeholder="Enter password">
+    
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>

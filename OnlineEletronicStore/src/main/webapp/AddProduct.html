@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Product</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/pic3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  h2 {
+    text-align: center;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  label {
+    color: white;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  .input-group i {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 13px;
+  }
+
+  .input-group input {
+    width: 90%;
+    padding: 8px 8px 8px 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .error {
+    color: yellow;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    display: none;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<form action="aps" method="post" onsubmit="return validateForm()">
+  <h2>Add Product</h2>
+
+  <label for="pcode">Product Code</label>
+  <div class="input-group">
+    <i class="fa-solid fa-barcode"></i>
+    <input type="text" name="pcode" id="pcode" required>
+  </div>
+  <div id="pcodeError" class="error">Product code must be a number.</div>
+
+  <label for="pname">Product Name</label>
+  <div class="input-group">
+    <i class="fa-solid fa-tag"></i>
+    <input type="text" name="pname" id="pname" required>
+  </div>
+
+  <label for="pcompany">Product Company</label>
+  <div class="input-group">
+    <i class="fa-solid fa-building"></i>
+    <input type="text" name="pcompany" id="pcompany" required>
+  </div>
+
+  <label for="pprice">Product Price</label>
+  <div class="input-group">
+    <i class="fa-solid fa-dollar-sign"></i>
+    <input type="text" name="pprice" id="pprice" required>
+  </div>
+  <div id="ppriceError" class="error">Price must be at least 30.</div>
+
+  <label for="pqty">Product Quantity</label>
+  <div class="input-group">
+    <i class="fa-solid fa-box"></i>
+    <input type="text" name="pqty" id="pqty" required>
+  </div>
+  <div id="pqtyError" class="error">Quantity cannot be less than 0.</div>
+
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+  let isValid = true;
+
+  // Product code validation
+  let pcode = document.getElementById("pcode").value.trim();
+  if (!/^[0-9]+$/.test(pcode)) {
+    document.getElementById("pcodeError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("pcodeError").style.display = "none";
+  }
+
+  // Price validation
+  let pprice = parseInt(document.getElementById("pprice").value.trim(), 10);
+  if (isNaN(pprice) || pprice < 30) {
+    document.getElementById("ppriceError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("ppriceError").style.display = "none";
+  }
+
+  // Quantity validation
+  let pqty = parseInt(document.getElementById("pqty").value.trim(), 10);
+  if (isNaN(pqty) || pqty < 0) {
+    document.getElementById("pqtyError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("pqtyError").style.display = "none";
+  }
+
+  return isValid;
+}
+</script>
+</body>
+</html>
