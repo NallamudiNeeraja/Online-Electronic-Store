@@ -24,18 +24,25 @@ It allows customers to register, browse products, and place orders, while admini
    <li>Database: Oracle (via JDBC)</li>
    <li>Server: Apache Tomcat</li>
 </ul>
+
 <h1>📸 Project Screenshots</h1>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-  <img src="" alt="Homepage" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Login" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Register" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Products" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Cart" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Checkout" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Orders" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Admin Dashboard" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Add Product" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  <img src="" alt="Order Success" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(200).png" alt="Screenshot 200" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(201).png" alt="Screenshot 201" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(202).png" alt="Screenshot 202" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(203).png" alt="Screenshot 203" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(204).png" alt="Screenshot 204" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(205).png" alt="Screenshot 205" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(206).png" alt="Screenshot 206" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(207).png" alt="Screenshot 207" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(208).png" alt="Screenshot 208" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(209).png" alt="Screenshot 209" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(210).png" alt="Screenshot 210" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(211).png" alt="Screenshot 211" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(212).png" alt="Screenshot 212" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(213).png" alt="Screenshot 213" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="screenshots/Screenshot%20(214).png" alt="Screenshot 214" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
+
 
