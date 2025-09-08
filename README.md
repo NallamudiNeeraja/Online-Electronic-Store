@@ -24,3 +24,18 @@ It allows customers to register, browse products, and place orders, while admini
    <li>Database: Oracle (via JDBC)</li>
    <li>Server: Apache Tomcat</li>
 </ul>
+<h1>📸 Project Screenshots</h1>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+  <img src="" alt="Homepage" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Login" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Register" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Products" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Cart" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Checkout" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Orders" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Admin Dashboard" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Add Product" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="" alt="Order Success" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+</div>
+
